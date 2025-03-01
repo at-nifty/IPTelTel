@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP通話アプリ</title>
+</head>
+<body>
+    <h2>通話する相手のIPアドレスを入力</h2>
+    <input type="text" id="targetIp" placeholder="192.168.1.100">
+    <button onclick="startCall()">通話開始</button>
+    <button onclick="endCall()">通話終了</button>
+
+    <audio id="remoteAudio" autoplay></audio>
+
+    <script src="webrtc.js"></script>
+</body>
+</html>
